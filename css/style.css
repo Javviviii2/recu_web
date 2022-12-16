@@ -1,0 +1,121 @@
+@font-face {
+   font-family: Sedgwick;
+   src: url(https://fonts.google.com/specimen/Sedgwick+Ave+Display);
+}
+@font-face {
+   font-family: Permanent;
+   src: url(https://fonts.google.com/specimen/Permanent+Marker?query=Permanent+Marker);
+}
+body{
+   font-family: Permanent, Helvetica, sans-serif;
+}
+nav{
+   background-color: #F2507B ;
+   width: 100%;
+   height: 100px;
+}
+.navbar{
+   display: flex;
+   justify-content: center;
+   padding: 2%;
+   font-family: Sedgwick;
+}
+.navbar a{
+   padding: 1%;
+   text-decoration: none;
+   color: white;
+   font-size: 30px;
+}
+.hero{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   margin: 1%;
+   height: 300px;
+}
+#img-hero{
+   grid-column: 2;
+   width: auto;
+   height: 10%;
+   padding: 2%;
+}
+#text-hero{
+   grid-column: 1;
+   grid-row: 1;
+   padding: 2%;
+   font-size: 80px;
+   text-align: center;
+}
+.part1{
+   margin-top: 2% ;
+   background-image: linear-gradient(rgb(255,255,255), rgb(242, 203, 5));
+}
+.part2{
+      background-image: linear-gradient( rgb(242, 203, 5),rgb(242, 80, 123), rgb(5, 91, 166));
+}
+.text{
+   padding: 2%;
+   text-align: justify;
+   font-size: 50px;
+}
+
+.gallery img{
+   width: 100%;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 24%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 5px;
+
+}
+
+/* Clear floats after the columns */
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+   text-align: center;
+   color: white;
+   padding: 2%;
+}
+ footer a{
+   color: white;
+ }
+footer ul{
+   list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+   .hero{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+   }
+   #img-hero{
+      height: 50%;
+   }
+   .text{
+      font-size: 30px;
+   }
+   .gallery{
+      display: flex;
+      flex-direction: column;
+   }
+   .column {
+      width: 95%;
+   }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+   .column {
+      float: left;
+      width: 47%;
+      padding: 5px;
+    }
+}
